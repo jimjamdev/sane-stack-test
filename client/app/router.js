@@ -7,4 +7,5 @@ var Router = Ember.Router.extend({
 
 export default Router.map(function() {
   this.resource('user', function() {});
+  this.resource('listing', function() {});
 });
