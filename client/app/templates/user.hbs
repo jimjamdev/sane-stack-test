@@ -1,1 +1,12 @@
+<h1>Users</h1>
+
+<ul>
+  {{#each user in model}}
+      <li>{{user.name}} - {{user.id}}</li>
+  {{else}}
+      <li>You have 0 listings.</li>
+  {{/each}}
+</ul>
+
+
 {{outlet}}

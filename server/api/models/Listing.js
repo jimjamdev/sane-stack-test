@@ -9,13 +9,16 @@ module.exports = {
 
   attributes: {
 
+    // relationships
+    user: {
+      model: 'user'
+    },
+
     name : { type: 'string' },
 
     body : { type: 'string' },
 
-    price : { type: 'float' },
-
-    user : { type: 'string' }
+    price : { type: 'float' }
   }
 };
 

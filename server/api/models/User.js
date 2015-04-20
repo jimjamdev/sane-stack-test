@@ -9,9 +9,17 @@ module.exports = {
 
   attributes: {
 
+    // Relationships
+    listings: {
+      collection: 'listing',
+      via: 'user'
+    },
+
     name : { type: 'string' },
 
-    age : { type: 'float' }
+    age : { type: 'float' },
+
+    email : { type: 'string' }
   }
 };
 
