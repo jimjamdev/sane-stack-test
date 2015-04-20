@@ -1,9 +1,11 @@
 <h1>Listings...</h1>
 
 <ul>
-{{#each listing in list}}
-  <li>{{listing.id}} or {{list.id}} or {{id}}</li>
-{{/each}}
+  {{#each listing in model}}
+    <li>{{listing.id}}</li>
+  {{else}}
+      <li>You have 0 listings.</li>
+  {{/each}}
 </ul>
 
 {{outlet}}
